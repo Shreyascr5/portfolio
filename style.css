@@ -8,10 +8,11 @@
 
 .sidebar {
     /* background-color: red; */
-    width: 200px;
+   position: absolute;
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
     background-color: rgb(218, 203, 203);
+    transition: transform 0.3s ease-in;
 }
 
 .sidebar nav {
@@ -154,4 +155,27 @@
 }
 .skills li{
 list-style: none;
+}
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+   }
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left :90px;
+}
+@media(max-width:1615px){
+.devPic{
+    display: none;
+}
+  
+   /* .sidebar{
+    transform: translate(-443px,0px);
+    position: absolute;
+   } */
 }
